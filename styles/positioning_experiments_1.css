@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header, nav, main, footer {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+header {
+    padding: 0;
+}
+
+header {
+    height: 150px;
+    position: relative;
+}
+
+main {
+    margin-left: 200px;
+    padding: 10px;
+    min-height: 100%;
+    min-height: calc(100% - 250px);
+}
+
+nav.top {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 0;
+}
+
+nav.top ul {
+    padding-left: 20px;
+}
+
+nav.top ul ul {
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    background-color: #fff;
+    z-index: 1;
+    padding: 0;
+}
+
+nav.top>ul>li:hover>ul {
+    display: block;
+}
+
+nav.top>ul>li>ul>li {
+    display: block;
+    padding: 5px 20px;
+}
+
+nav.top li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav.left {
+    position: absolute;
+    width: 200px;
+    min-height: 100%;
+    min-height: calc(100% - 250px);
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+}
